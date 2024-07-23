@@ -1,5 +1,7 @@
 import { Home, Briefcase, Users, BookOpen, Phone } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Services from "./pages/Services.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -15,13 +17,13 @@ export const navItems = [
     title: "Services",
     to: "/services",
     icon: <Briefcase className="h-4 w-4" />,
-    page: null, // We'll implement this later
+    page: <Services />,
   },
   {
     title: "About Us",
     to: "/about",
     icon: <Users className="h-4 w-4" />,
-    page: null, // We'll implement this later
+    page: <AboutUs />,
   },
   {
     title: "Blog",
